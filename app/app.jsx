@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route,Router,IndexRoute, HashHistory} = require('react-router');
 
+var TodoApp = require('TodoApp');
+
 // Load foundation
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
@@ -13,6 +15,6 @@ let hashHistory = Router.hashHistory;
 
 
 ReactDOM.render(
-  <p>BoilerPlate3 project</p>,
+  <TodoApp/>,
   document.getElementById('app')
 );
